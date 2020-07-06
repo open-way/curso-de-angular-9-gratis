@@ -1,4 +1,4 @@
-**BASE CON ANGULAR**
+# BASE CON ANGULAR
 
 *Módulos*
 - Anatomía de un módulo
