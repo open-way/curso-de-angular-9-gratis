@@ -1,4 +1,4 @@
-##Base con Angular
+**Base con Angular**
 
 Instalamos bootstrap.
 - `npm i --save bootstrap`
