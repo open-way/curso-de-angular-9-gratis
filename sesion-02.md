@@ -4,11 +4,14 @@
 - Anatomía de un módulo
 - Generación de módulos
 *Componentes*
+
 - Anatomía de un componente
 - Generación de componentes
+
 *Visibilidad entre componentes*
 - Componentes públicos y privados
 - Importación y exportación entre módulos
+
 *Organización*
 - Organizaación de la aplicación en módulos
 
