@@ -1,5 +1,7 @@
 # BASE CON ANGULAR
 
+Bienvenidos a la sesión 02 del *Curso de Angular 09 GRATIS*.
+
 *Módulos*
 - Anatomía de un módulo
 - Generación de módulos
