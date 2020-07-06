@@ -2,25 +2,28 @@
 
 Bienvenidos a la sesión 02 del *Curso de Angular 09 GRATIS*.
 
-*Módulos*
+### Temas
+
+**Módulos**
 - Anatomía de un módulo
 - Generación de módulos
 
-*Componentes*
+**Componentes**
 
 - Anatomía de un componente
 - Generación de componentes
 
-*Visibilidad entre componentes*
+**Visibilidad entre componentes**
 - Componentes públicos y privados
 - Importación y exportación entre módulos
 
-*Organización*
+**Organización**
 - Organizaación de la aplicación en módulos
 
-_Primero vamos a instalar bootstrap, para que se vea bonito :D_
 
-Instalamos bootstrap.
+Primero vamos a instalar **bootstrap**, para que se vea bonito :D.
+
+Instalamos bootstrap con el siguiente comando.
 - `npm i --save bootstrap`
 
 Tres formas de utilizar la libreria.
