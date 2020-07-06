@@ -1,8 +1,9 @@
-**Base con Angular**
+**BASE CON ANGULAR**
 
 *Módulos*
 - Anatomía de un módulo
 - Generación de módulos
+
 *Componentes*
 
 - Anatomía de un componente
@@ -15,10 +16,12 @@
 *Organización*
 - Organizaación de la aplicación en módulos
 
+_Primero vamos a instalar bootstrap, para que se vea bonito :D_
+
 Instalamos bootstrap.
 - `npm i --save bootstrap`
 
-Dos formas de utilizar la libreria.
+Tres formas de utilizar la libreria.
 1) Instalamos directo en el styles.scss
 
 `@import '~bootstrap/dist/css/boostrap.min.css';`
