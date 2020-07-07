@@ -140,7 +140,7 @@ Públicos, Estos generalmente estan declarados en el array `declarations` y `exp
 
 ## Organización
 
-### Organizaación de la aplicación en módulos
+### Organizaación de la aplicación en módulos ver en el proyecto: 
 
-
+[Estructura del proyecto](https://github.com/open-way/curso-de-angular-9-gratis/tree/master/sesion-02/miProyecto/src/app)
 
