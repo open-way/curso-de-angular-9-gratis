@@ -78,7 +78,7 @@ Podemos usar el `-h` para que ver que opciones mas tenemos.
 
 **Componentes**
 
-Si lo módulos con como las ramaz de un arbol los componentes son las hojas.
+Si lo módulos con como las ramaz de un arbol los componentes son las hojas. Todos los componentes deben pertenecer solo a un módulo.
 
 ***Anatomía de un componente***
 ```ts
@@ -117,7 +117,7 @@ Revisaremos algo interesante.
 
 ***Componentes públicos y privados***
 
-Privados, estos generalmente solo estan declarados en el array:
+Privados, estos generalmente solo estan declarados en el array del módulo:
 ```ts
   ...
   declarations: [
@@ -126,7 +126,7 @@ Privados, estos generalmente solo estan declarados en el array:
   ...
 ```
 
-Públicos, Estos generalmente estan declarados en el array `declarations` y `exports`:
+Públicos, Estos generalmente estan declarados en el array `declarations` y `exports` del módulo:
 ```ts
   ...
   declarations: [
