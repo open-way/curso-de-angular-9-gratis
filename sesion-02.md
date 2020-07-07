@@ -44,3 +44,99 @@ Tres formas de utilizar la libreria.
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
 ```
+
+
+**Módulos**
+
+Los módulos son la base fundamenta del Angular, angular es un framework modularizado, por lo tanto es importante conocer su anatomía.
+
+***Anatomía de un módulo***
+```ts
+ 
+@NgModule({
+  imports: [
+    ...ANGULAR_MODULES,
+  ],
+  exports: [
+    ...COMPONENTS,
+  ],
+  declarations: [
+    ...COMPONENTS,
+  ],
+  providers: [
+  ],
+})
+export class SharedModule { }
+```
+
+***Generación de módulos***
+- Forma general `ng generate module mi-modulo`
+- Forma resumida `ng g m mi-modulo`
+
+Podemos usar el `-h` para que ver que opciones mas tenemos.
+
+
+**Componentes**
+
+Si lo módulos con como las ramaz de un arbol los componentes son las hojas.
+
+***Anatomía de un componente***
+```ts
+@Component({
+  selector: 'open-input-icon',
+  styleUrls: ['./input-icon.component.scss'],
+  templateUrl: './input-icon.component.html',
+})
+export class InputIconComponent implements AfterViewInit {
+  @Input() public fieldSize = 'medium';
+  @Input() public icon = '';
+
+  constructor(
+  ) {
+  }
+
+  ngAfterViewInit() {
+  }
+  
+  public myMetodo() {
+  
+  }
+  
+}
+```
+
+***Generación de componentes***
+- Forma general `ng generate component mi-componente`
+- Forma resumida `ng g c mi-componente`
+
+Podemos usar el `-h` para que ver que opciones mas tenemos.
+
+**Visibilidad entre componentes**
+
+Revisaremos algo interesante.
+
+***Componentes públicos y privados***
+
+Privados, estos generalmente solo estan declarados en el array:
+```ts
+  ...
+  declarations: [
+    ...COMPONENTS_PRIVADOS,
+  ]
+  ...
+```
+
+Públicos, Estos generalmente estan declarados en el array `declarations` y `exports`:
+```ts
+  ...
+  declarations: [
+    ...COMPONENTS_PUBLICOS,
+  ],
+  exports: [
+    ...COMPONENTS_PUBLICOS,
+  ]
+  ...
+```
+
+
+
