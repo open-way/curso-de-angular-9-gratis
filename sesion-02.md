@@ -138,5 +138,9 @@ Públicos, Estos generalmente estan declarados en el array `declarations` y `exp
   ...
 ```
 
+## Organización
+
+### Organizaación de la aplicación en módulos
+
 
 
