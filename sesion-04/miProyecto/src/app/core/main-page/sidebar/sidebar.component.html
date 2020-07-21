@@ -1,0 +1,19 @@
+<div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">
+        <a routerLink="/">
+            <img src="https://avatars2.githubusercontent.com/u/40248327?s=200&v=4" width="30" height="30" alt=""
+                class="d-inline-block align-top">
+            Open Way
+        </a>
+    </div>
+    <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+            Dashboard</a>
+        <a [routerLink]="['/prueva', parametro]" class="list-group-item list-group-item-action bg-light">Prueva</a>
+        <a [routerLink]="['/modulos']" class="list-group-item list-group-item-action bg-light">Modulos</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Configuraciones</a>
+        <a [routerLink]="['/roles']" class="list-group-item list-group-item-action bg-light">Roles</a>
+        <a [routerLink]="['/usuarios']" class="list-group-item list-group-item-action bg-light">Usuarios</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Entidades</a>
+    </div>
+</div>
