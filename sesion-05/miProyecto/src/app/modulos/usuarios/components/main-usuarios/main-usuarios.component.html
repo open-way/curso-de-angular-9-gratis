@@ -1,0 +1,77 @@
+<!-- <div class="container"> -->
+<div class="card card-default">
+    <div class="card-header">
+        Agregar usuario
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formUsuario">
+            <div class="form-group">
+                <label for="nombre" class="col-form-label col-form-label-sm">Nombre:</label>
+                <input formControlName="nombre" type="text" id="nombre" class="form-control" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-form-label col-form-label-sm">Correo:</label>
+                <input formControlName="email" type="text" id="email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+                <label for="activo" class="col-form-label col-form-label-sm">Activo:</label>
+                <input formControlName="activo" type="checkbox" id="activo" name="activo">
+            </div>
+            <button type="button" [disabled]="formUsuario.invalid" (click)="guardar()" class="btn btn-primary">Agregar</button>
+        </form>
+
+        <aside class="container">
+            {{ formUsuario.value | json }}
+            <br>
+            Es valido
+            <strong>
+                {{ formUsuario.valid | json }}
+            </strong>
+            <!-- {{ rolToEdit | json }} -->
+        </aside>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-header">
+        Lista usuario
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Usuario</th>
+                    <th>Correo</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody *ngIf="usuarios.length > 0; else sinResultados">
+                <tr *ngFor="let item of usuarios; let i = index">
+                    <td>{{ (i+1) }}</td>
+                    <td>{{ item.nombre }}</td>
+                    <td>{{ item.email }}</td>
+                    <td>
+                        <span *ngIf="item.activo">Activo</span>
+                        <span *ngIf="!item.activo">Desactivo</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-info" style="margin-right: 0.3rem"
+                            (click)="onEditar(item)">Editar</button>
+                        <button class="btn btn-danger" (click)="onEliminar(i)">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+            <ng-template #sinResultados>
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="text-center">
+                            Sin resultados.
+                        </td>
+                    </tr>
+                </tbody>
+            </ng-template>
+        </table>
+    </div>
+</div>

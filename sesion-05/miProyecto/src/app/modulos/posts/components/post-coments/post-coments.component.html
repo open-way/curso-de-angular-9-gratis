@@ -1,0 +1,29 @@
+<h3>Comentarios</h3>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>postId</th>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>body</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of comments; let i=index">
+            <th>{{ (i+1) }}</th>
+            <td>{{ item.postId }}</td>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.body }}</td>
+            <td>
+                <button class="btn btn-warning">Editar</button>
+                <button class="btn btn-danger">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
