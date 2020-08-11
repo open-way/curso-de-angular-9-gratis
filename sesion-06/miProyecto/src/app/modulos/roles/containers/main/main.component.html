@@ -1,0 +1,10 @@
+<!-- <h3>Formulario</h3> -->
+
+<open-form-rol-new [rolToEdit]="rolToEdit" (onGuardar)="guardarMain($event)"></open-form-rol-new>
+
+<!-- <h3>Lista de roles</h3> -->
+
+<open-list-roles (onShowToEdit)="onShowToEdit($event)"
+(onEliminarr)="onEliminarr($event)"
+[rolesList]="roles"></open-list-roles>
+
